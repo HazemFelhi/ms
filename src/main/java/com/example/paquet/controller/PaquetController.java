@@ -52,9 +52,6 @@ public class PaquetController {
                                  @Valid @RequestBody Paquet paquetDetails) {
         try {
             Paquet paquet = paquetRepository.findById(paquetId);
-            paquet.
-            /*paquet.setDescription_paquet(paquetDetails.getDescription_paquet());
-            Paquet updatedCatalog = paquetRepository.save(Optional.of(paquet));*/
             return updatedCatalog;
         }catch (Exception e){
             System.out.println(e.getStackTrace());
